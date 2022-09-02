@@ -6,24 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Scramble</title>
-    <script src="js/scramble.js"defer></script>
-    <script src="js/words.js"defer></script>
+    
+    
     </head>
 <body>
     <div class="container">
-        <h2>WORD SCRAMBLE</h2>
+        
+            <header>
+                <h2>WORD SCRAMBLE GAME</h2>
+                <h5 class="num">Number of plays:<span>3</span></h5>
+                <h5 class="score">score:<span>0</span></h5>
+            </header>
+ 
         <div class="content">
-            <p class="word">example</p>
-            <div class="details">
-                <p class="hint">Hint: <span>The processs of increase or growth</span></p>
-                <p class="time">Time left:<span><b>30</b>s</span></p>
-            </div>
-            <input type="text" placeholder="Enter the valid word">
-            <div class="buttons">
-                <button class="refresh-word">Refresh-Word</button>
-                <button class="check-word">Check-Word</button>
-            </div>
+            <div class="word">EGMNEIT</div>
+         <div class="details">
+            <p class="hint">Hint:<span>The process of increase of grow</span></p>
+            <p class="time">Time left:<span><b>30</b>s</span></p>
+        </div>
+        <input type="text" placeholder="Enter a valid word">
+        <div class="btn">
+            <button class="refresh-word">Refresh-Word</button>
+            <button class="Check-word" disabled>Check-Word</button>
         </div>
     </div>
+</div>
+    
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>

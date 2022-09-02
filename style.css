@@ -12,21 +12,34 @@ body{
     background-color: rgb(228, 138, 54);
 }
 .container {
-    width: 450px;
+    width: 100%;
     background-color: aqua;
     border-radius: 7px;
+    max-width: 450px;
 }
-.container h2 {
-    font-size: 30px;
+.container header { 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: 500;
-    padding: 18px 25px;
+    
+    padding: 20px;
     border-bottom: 5px solid wheat;
 
 }
-.container,.content {
-    margin: 25px 20px 35px;
+.container h2{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 10px #f1ee07;
+
 }
+
+.container header span {
+    color: rgb(220, 20, 20);
+}
+
+.container .content{
+    margin: 25px;
+}
+
  .word{
   font-size: 33px;
   font-weight: 600;
@@ -34,10 +47,13 @@ body{
   text-transform: uppercase;
   letter-spacing: 20px;
   margin-right: -25px;
+  word-wrap: break-word;
+   text-shadow: 1px 1px 10px #f1ee07;
+
 }
 
 .details {
-    margin: 25px 0 20px;
+    margin: 25px 0;
 }
 .details p {
     font-size: 15px;
@@ -50,10 +66,12 @@ height: 60px;
 padding: 0 16px;
 outline: none;
 border-radius: 5px;
-border: 2px solid rgb(228, 138, 54);
+border: 2px solid rgb(77, 73, 73);
+box-shadow: inset 1px 1px 4px #f1ee07, 
+            inset -1px 1px 4px #f1ee07;
 }
 
-.buttons {
+.btn {
     display: flex; 
     justify-content: space-between;
     margin-top: 20px
@@ -64,8 +82,10 @@ button {
     outline: none;
     width: calc(100% / 2 - 8px);
     font-size: 15px;
-    padding: 15px 0;
+    padding: 15px;
     border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 1px;
 
 }
 
@@ -73,11 +93,16 @@ button {
     background-color:  blue;
     color: white;
 }
-.check-word{
-    background-color: bisque;
+.Check-word{
+    background-color: black;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f1ee07;
 }
-
+ 
+.Check-word:disabled{
+    opacity: 0.5;
+    pointer-events: none;
+}
 
 
 
